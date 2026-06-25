@@ -1,0 +1,15 @@
+go.sum
+
+
+*.exe
+*.bat
+*.so
+
+*.log
+*.linux
+
+.idea/
+.junie/
+.vscode
+.history
+*.yaml

@@ -9,7 +9,6 @@ import (
 	"os/signal"
 	"sync"
 	"syscall"
-	"time"
 
 	"google.golang.org/grpc"
 )
@@ -93,8 +92,6 @@ func (Server) ChangeAssets(ctx context.Context, args *pb.ChangeAssetsArgs) (*pb.
 	if !ok {
 		return nil, fmt.Errorf("fetch Assets failed ")
 	}
-
-	time.Sleep(4 * time.Second)
 
 	return &pb.ChangeAssetsReply{
 		ChangeAssets: &pb.ChangeAssets{
